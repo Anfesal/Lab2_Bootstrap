@@ -24,6 +24,7 @@
 
 .img_tec {
     margin: 5px;
+    border: 3px solid coral;
 }
 
 .mn {
@@ -36,4 +37,20 @@
 
 li {
     text-align: justify;
+}
+
+.clr {
+    background-color: rgb(226, 94, 94);
+}
+
+footer {
+    background-color: #1A1A1A;
+    height: 50%;
+    color: white;
+    padding: 15px;
+}
+
+.main1 {
+    display: flex;
+    margin: 0 auto;
 }

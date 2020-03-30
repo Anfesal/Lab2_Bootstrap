@@ -101,7 +101,54 @@
                 </div>
             </div>
 
-            <button class="btn btn-outline-primary" data-target="#collapseInfo" data-toggle="collapse">Registrarse ahora</button>
+            <button class="btn btn-outline-primary" data-toggle="modal" data-target="#myModal1">Registrarse ahora</button>
+            <!-- Modal -->
+            <div id="myModal1" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Registro</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                        </div>
+                        <div class="modal-body">
+                            <form id="login-form" method="post" role="form" style="display: block;">
+                                <div class="form-group">
+                                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Usuario" value="">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Contraseña">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Repetir contraseña">
+                                </div>
+                                <div class="form-group text-center">
+                                    <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+                                    <label for="remember"> Recordarme</label>
+                                </div>
+                                <div class="form-group ">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-primary">Registrarme</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -157,7 +204,7 @@
             <h4> <b> PRODUCTOS EN OFERTAS</b></h4>
         </div>
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-md-4 col-sm-4">
                 <div class="card text-center" style="width: 18rem;">
                     <img class="card-img-top" src="img/termo.jpeg" alt=" Card image cap " width="200" height="300">
                     <div class="card-body ">
@@ -174,25 +221,26 @@
 
                             <!-- Modal content-->
                             <div class="modal-content">
-                                <div class="modal-header">
+                                <div class="modal-header clr">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="row">
-                                        <div class="col-4 col-lg-6">
-                                            <img class="img_tec" src="img/termo.jpeg" alt="" width="370" height="375">
+                                        <div class="col-4 col-lg-6 ">
+                                            <img class="img_tec" src="img/termo.jpeg" alt="" width="100%" height="100%">
                                         </div>
-                                        <div class="col-8 col-lg-6">
+                                        <div class="col-8 col-lg-6 ">
 
-                                            <h5>ADAPTADOR RECEPTOR BLUETOOTH</h5>
+                                            <h5 class="card-title mn">MUG LENTE CAMARA</h5>
                                             <hr>
-                                            <p class="precio_cat">$22.000</p>
+                                            <p class="precio_cat">$25.000</p>
                                             <h6>Descripción</h6>
                                             <hr>
-                                            <ul>
-                                                <li>Escucha la música de su teléfono o reproductor de mp3 inteligente en su hogar o en el carro.</li>
-                                                <li>Se convierte en Manos Libres bluetooth con altavoz.</li>
-                                                <li>Diseñado para cualquier aparato de tu casa que no tenga bluetooth , equipos de sonido estéreo, auriculares, radios, grabadores, altavoces del automóvil y motocicleta.</li>
+                                            <ul class="card-text">
+                                                <li>Material ABS y acero inoxidable.</li>
+                                                <li>Medidas 7. 5cm x 13. 5cm.</li>
+                                                <li>Ideal para llevar tus bebidas.</li>
+                                                <li>Diseño lente de cámara.</li>
                                             </ul>
                                             <label>Cantidad</label>
                                             <input type="text" name="CANTIDAD" size="3" required>
@@ -210,7 +258,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-md-4 col-sm-4">
                 <div class="card text-center" style="width: 18rem;">
                     <img class="card-img-top" src="img/piña.jpg" alt=" Card image cap " width="200" height="300">
                     <div class="card-body ">
@@ -226,13 +274,13 @@
 
                             <!-- Modal content-->
                             <div class="modal-content">
-                                <div class="modal-header">
+                                <div class="modal-header clr">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="row">
                                         <div class="col-4 col-lg-6">
-                                            <img class="img_tec" src="img/piña.jpg" alt="" width="370" height="375">
+                                            <img class="img_tec" src="img/piña.jpg" alt="" width="100%" height="100%">
                                         </div>
                                         <div class="col-8 col-lg-6">
 
@@ -263,7 +311,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-md-4 col-sm-4">
                 <div class="card text-center" style="width: 18rem;">
                     <img class="card-img-top" src="img/contenedor3.JPG" alt=" Card image cap " width="200" height="300">
                     <div class="card-body ">
@@ -279,13 +327,42 @@
 
                             <!-- Modal content-->
                             <div class="modal-content">
-                                <div class="modal-header">
+                                <div class="modal-header clr">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="row">
                                         <div class="col-4 col-lg-6">
-                                            <img class="img_tec" src="img/contenedor3.JPG" alt="" width="370" height="375">
+                                            <div id="carousel-main3" class="carousel slide" data-ride="carousel">
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img class="img_tec" src="img/contenedor3.JPG" alt="" width="100%" height="100%">
+
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="img_tec" src="img/got1.JPG" alt="" width="100%" height="100%">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="img_tec" src="img/got2.JPG" alt="" width="100%" height="100%">
+                                                    </div>
+
+                                                </div>
+
+                                                <a href="#carousel-main3" class="carousel-control-prev" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </a>
+                                                <a href="#carousel-main3" class="carousel-control-next" data-slide="next">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </a>
+
+                                                <ul class="carousel-indicators">
+                                                    <li data-target="#carousel-main3" class="active" data-slide-to=0></li>
+                                                    <li data-target="#carousel-main3" data-slide-to=1></li>
+                                                    <li data-target="#carousel-main3" data-slide-to=2></li>
+                                                </ul>
+                                            </div>
+
                                         </div>
                                         <div class="col-8 col-lg-6">
 
@@ -322,7 +399,7 @@
             <h4> <b> PRODUCTOS MAS VENDIDOS</b></h4>
         </div>
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-md-4 col-sm-4">
                 <div class="card text-center" style="width: 18rem;">
                     <img class="card-img-top" src="img/luna.jpg" alt=" Card image cap " width="200" height="300">
                     <div class="card-body ">
@@ -338,13 +415,41 @@
 
                             <!-- Modal content-->
                             <div class="modal-content">
-                                <div class="modal-header">
+                                <div class="modal-header clr">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="row">
                                         <div class="col-4 col-lg-6">
-                                            <img class="img_tec" src="img/luna.jpg" alt="" width="370" height="375">
+                                            <div id="carousel-main1" class="carousel slide" data-ride="carousel">
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img class="img_tec" src="img/luna.jpg" alt="" width="100%" height="100%">
+
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="img_tec" src="img/luna1.jpeg" alt="" width="100%" height="100%">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="img_tec" src="img/luna2.jpeg" alt="" width="100%" height="100%">
+                                                    </div>
+
+                                                </div>
+
+                                                <a href="#carousel-main1" class="carousel-control-prev" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </a>
+                                                <a href="#carousel-main1" class="carousel-control-next" data-slide="next">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </a>
+
+                                                <ul class="carousel-indicators">
+                                                    <li data-target="#carousel-main1" class="active" data-slide-to=0></li>
+                                                    <li data-target="#carousel-main1" data-slide-to=1></li>
+                                                    <li data-target="#carousel-main1" data-slide-to=2></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                         <div class="col-8 col-lg-6">
 
@@ -375,7 +480,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-md-4 col-sm-4">
                 <div class="card text-center" style="width: 18rem;">
                     <img class="card-img-top" src="img/CALAVERA.jpg" alt=" Card image cap " width="200" height="300">
                     <div class="card-body ">
@@ -391,13 +496,13 @@
 
                             <!-- Modal content-->
                             <div class="modal-content">
-                                <div class="modal-header">
+                                <div class="modal-header clr">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="row">
                                         <div class="col-4 col-lg-6">
-                                            <img class="img_tec" src="img/CALAVERA.jpg" alt="" width="370" height="375">
+                                            <img class="img_tec" src="img/CALAVERA.jpg" alt="" width="100%">
                                         </div>
                                         <div class="col-8 col-lg-6">
 
@@ -427,7 +532,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-md-4 col-sm-4">
                 <div class="card text-center" style="width: 18rem;">
                     <img class="card-img-top" src="img/granada.jpg" alt=" Card image cap " width="200" height="300">
                     <div class="card-body ">
@@ -443,13 +548,39 @@
 
                             <!-- Modal content-->
                             <div class="modal-content">
-                                <div class="modal-header">
+                                <div class="modal-header clr">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="row">
                                         <div class="col-4 col-lg-6">
-                                            <img class="img_tec" src="img/granada.jpg" alt="" width="370" height="375">
+                                            <div id="carousel-main2" class="carousel slide" data-ride="carousel">
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img class="img_tec" src="img/granada.jpg" alt="" width="100%" height="100%">
+
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="img_tec" src="img/granada1.jpg" alt="" width="100%" height="100%">
+                                                    </div>
+
+                                                </div>
+
+                                                <a href="#carousel-main2" class="carousel-control-prev" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </a>
+                                                <a href="#carousel-main2" class="carousel-control-next" data-slide="next">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </a>
+
+                                                <ul class="carousel-indicators">
+                                                    <li data-target="#carousel-main2" class="active" data-slide-to=0></li>
+                                                    <li data-target="#carousel-main2" data-slide-to=1></li>
+
+                                                </ul>
+                                            </div>
+
                                         </div>
                                         <div class="col-8 col-lg-6">
 
@@ -483,6 +614,38 @@
         </div>
     </div>
 
+    <br>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6 text-left">
+                    <h6 class="text-muted lead">CONTACTO:</h6>
+                    <h6 class="text-muted">
+                        Calle 65 #55-30<br> Barrio Chagualo.<br> Medellín, Antioquia. <br> Teléfono: 3182044125.<br>
+                    </h6>
+                </div>
+
+                <div class="col-xs-12 col-md-6 text-right">
+                    <h6 class="text-muted lead">ENCUENTRANOS EN LAS REDES</h6>
+                    <div class="redes-footer">
+                        <a href="https://www.facebook.com/"><img src="img/facebook.png" width="10%"></a>
+                        <a href="https://twitter.com/"><img src="img/twitter.png" width="10%"></a>
+                        <a href="https://www.instagram.com/"><img src="img/instagram.png" width="10%"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-12 text-right">
+                    <p class="text-muted small">BandStore, Tu tienda virtual.<br> Todos los derechos reservados.</p>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+        </div>
+    </footer>
 </body>
 
 </html>
